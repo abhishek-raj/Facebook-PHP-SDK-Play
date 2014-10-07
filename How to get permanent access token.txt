@@ -1,0 +1,12 @@
+To get a permanent page access token:-
+1. call this url with a temporary token.
+
+https://graph.facebook.com/oauth/access_token?client_id=app_id&client_secret=app_secret&grant_type=fb_exchange_token&fb_exchange_token=temporary_secret_key
+
+
+2. Then use the returned token in graph explorer and issue the following request:-
+/me/accounts
+
+3. Copy the access token of the respective page and hardwire it in the php code.
+
+4. This code is permanent as can be checked in access token debug tool.
